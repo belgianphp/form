@@ -1,0 +1,7 @@
+*.vim
+tags
+tag
+main.php
+vendor/
+nota.txt
+composer.lock
