@@ -1,9 +1,7 @@
-# widget-form
-Widget Form HTML
+# Belgian Form
+Form HTML
 
 ## Installation
 ```
-$ mkdir dir_project
-$ cd dir_project
-$ composer require senun/widget-form
+$ composer require belgian/form
 ```
