@@ -21,7 +21,7 @@ class Option implements IGetElement
             $opt->setAttribute('value', $value);
             $opt->addInnerText($description);
 
-            if(!is_null($selected) && $selected == $key) 
+            if(!is_null($selected) && $selected == $value) 
             {
                 $opt->setAttribute('selected', 'selected');
             }

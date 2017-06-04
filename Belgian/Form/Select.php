@@ -35,7 +35,7 @@ class Select implements IGetElement
 
 
 
-    public function setAttribute($property, $value)
+    public function setAttribute($property, $value = NULL)
     {
         $this->select->setAttribute($property, $value);
 
