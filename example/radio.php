@@ -3,13 +3,14 @@
 require '../vendor/autoload.php';
 
 use Belgian\Form\Label;
-use Belgian\Form\Input;
+use Belgian\Form\Radio;
 
 
 for ($i = 1; $i <= 3; $i++)
 {
     
-   $radio = new Input('radio', 'optradio', $i);
+   $radio = new Radio('optradio', $i);
+   $radio->checked(2);
 
    $label = new Label(
        $radio->getElement() . 'Option ' . $i
@@ -22,14 +23,22 @@ for ($i = 1; $i <= 3; $i++)
 }    
 
 /*
-<label class="radio-inline">
-  <input type="radio" name="optradio">Option 1
+<label>
+    <input type="radio" name="optradio" value="1" />
+    Option 1
 </label>
-<label class="radio-inline">
-  <input type="radio" name="optradio">Option 2
+<br />
+
+<label>
+    <input type="radio" name="optradio" value="2" checked="checked" />
+    Option 2
 </label>
-<label class="radio-inline">
-  <input type="radio" name="optradio">Option 3
+<br />
+
+<label>
+    <input type="radio" name="optradio" value="3" />
+    Option 3
 </label>
+<br />
 
 */ 
